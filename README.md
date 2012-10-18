@@ -45,7 +45,7 @@ adb catlog | grep  TAG
 
 TAG is the member variable in you component class.
 
-3. Another notification
+3. [Another notification] [1]
 -----------------------
 You can replace the 
 
@@ -53,10 +53,10 @@ You can replace the
           "action": "YOUR_COMPONENT_INTENT",
 ```
 
-with the following lines to let the Android system notification triggered[1].
+with the following lines to let the Android system notification triggered.
 
 ```bash
           "title": "my title",
           "alert": "my alert",
 ```
-[1] https://www.parse.com/docs/android_guide#push-receiving "Parse Doc on push-receive"
+[1]: https://www.parse.com/docs/android_guide#push-receiving "Parse Doc on push-receive"
