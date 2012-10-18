@@ -31,13 +31,22 @@ curl -X POST \
      https://api.parse.com/1/push
 ```
 
-you can chcange the 
+To check the received data pushed on Android Client by this command: 
+
+```bash
+adb catlog | grep  TAG
+```
+
+TAG is the member variable in you component class.
+
+
+You can replace the 
 
 ```bash
           "action": "YOUR_COMPONENT_INTENT",
 ```
 
-with 
+with the following lines to let the Android system notification triggered.
 
 ```bash
           "title": "my title",
