@@ -11,3 +11,36 @@ and change the  following lines in
 17    Parse.initialize(this, YOUR_APPLICATION_ID, YOUR_CLIENT_KEY);
 ```
 
+```bash
+curl -X POST \
+  -H "X-Parse-Application-Id: YOUR_APPLICATION_ID" \
+  -H "X-Parse-REST-API-Key: YOUR_REST_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+        "type": "android",
+        "channels": [
+          "YOUR_CHANNEL_SUBSCRIBED"
+        ],
+        "data": {
+          "command": "Hello world",
+          "action": "YOUR_COMPONENT_INTENT",
+          "location": "China",
+          "date": "2012-12-12 12:12:12"
+        }
+      }' \
+     https://api.parse.com/1/push
+```
+
+you can chcange the 
+
+```bash
+          "action": "YOUR_COMPONENT_INTENT",
+```
+
+with 
+
+```bash
+          "title": "my title",
+          "alert": "my alert",
+```
+
