@@ -45,7 +45,7 @@ adb catlog | grep  TAG
 
 TAG is the member variable in you component class.
 
-3. [Another notification] [1]
+3. [Another to receive push notification] [1]
 -----------------------
 You can replace the 
 
