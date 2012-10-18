@@ -2,6 +2,10 @@ ParseCom-Android-Sample
 =======================
 
 Just a Simple Sample.
+--------------------
+
+1. Pre
+--------------------
 before run the project, pls register a developer account on parser.com
 and change the  following lines in 
 
@@ -31,6 +35,8 @@ curl -X POST \
      https://api.parse.com/1/push
 ```
 
+2. Check log. 
+--------------------
 To check the received data pushed on Android Client by this command: 
 
 ```bash
@@ -39,17 +45,18 @@ adb catlog | grep  TAG
 
 TAG is the member variable in you component class.
 
-
+3. Another notification
+-----------------------
 You can replace the 
 
 ```bash
           "action": "YOUR_COMPONENT_INTENT",
 ```
 
-with the following lines to let the Android system notification triggered.
+with the following lines to let the Android system notification triggered[1].
 
 ```bash
           "title": "my title",
           "alert": "my alert",
 ```
-
+[1] https://www.parse.com/docs/android_guide#push-receiving "Parse Doc on push-receive"
