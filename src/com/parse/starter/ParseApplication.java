@@ -26,9 +26,12 @@ public class ParseApplication extends Application {
 		//ParseACL.setDefaultACL(defaultACL, true);
 		
 	//	ParseInstallation.createWithoutData(null, null );
-	
+		
+	//When using channels, you add this activity in the subscribe method call.
 		 PushService.subscribe(this, "TEST_CHANNEL_ONE", ParseStarterProjectActivity.class);
-		 
+		
+		//If you are using advanced targeting, you can specify a default Activity to be used
+		 PushService.setDefaultPushCallback(this,  ParseStarterProjectActivity.class);
 
 	}
 
